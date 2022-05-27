@@ -1,0 +1,312 @@
+/* Variables */
+
+:root {
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+  --basic-red: #FB565A;
+  --hover-red: #e74246;
+  --active-red: #d7373b;
+  --basic-green: #00ca74;
+  --hover-green: #00bc6c;
+  --active-green: #00aa62;
+  --basic-yellow: #efc849;
+  --hover-yellow: #eab534;
+  --active-yellow: #e5a722;
+  --basic-gray: #e1e1e1;
+  --basic-light-gray: #eeeeee;
+
+  --special: #663d15;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url(/fonts/roboto.woff2),
+      url(/fonts/roboto.woff);
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url(/fonts/robotobold.woff2),
+      url(/fonts/robotobold.woff);
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url(/fonts/robotomedium.woff2),
+      url(/fonts/robotomedium.woff);
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Global */
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+  color: var(--basic-black)
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main header */
+
+.main-header {
+  background-color: var(--basic-gray);
+}
+
+/* Main navigation */
+
+.main-navigation {
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--basic-black);
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.site-navigation {
+  list-style: none;
+  padding: 0 40px;
+}
+
+.site-navigation,
+.basket {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.basket a:hover {
+  background-color: var(--basic-gray);
+  color: var(--hover-red);
+}
+
+.site-navigation a:focus,
+.basket a:focus {
+  background-color: var(--basic-gray);
+  color: var(--hover-black);
+  opacity: .3;
+}
+
+/* Benefits */
+
+.benefits p:nth-child(1) {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.benefits {
+  background-color: var(--basic-gray);
+}
+
+.benefits-list {
+  text-align: center;
+}
+
+/* Services */
+
+.services-list {
+  list-style: none;
+}
+
+.services-item {
+  text-align: center;
+}
+
+.services-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+/* Index columns */
+
+/* Description */
+
+.motto {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.uppercase-text {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.opportunities {
+  list-style: none;
+}
+
+/* Statistics */
+
+.statistics-content th {
+  font-size: 45px;
+  font-weight: 700;
+  line-height:64px ;
+  text-transform: uppercase;
+}
+
+/* Partners */
+
+.partners-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.partners-list img {
+  opacity: 0.1;
+}
+
+.partners-list img:focus,
+.partners-list img:hover {
+  opacity: 1;
+}
+
+.partners-list img:active{
+  opacity: 0.1;
+}
+
+
+/* Button */
+
+.button {
+  font: inherit;
+  text-align: center;
+  font-weight: 500;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: none;
+  padding: 17px 54px 15px 54px;
+  border-radius: 3%;
+
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--hover-red);
+}
+
+.button:active{
+  background-color: var(--active-red);
+}
+
+.button-web {
+  background-color: var(--basic-red);
+}
+
+.button-web:hover,
+.button-web:focus {
+  background-color: var(--hover-red);
+}
+
+.button-web:active {
+  background-color: var(--active-red);
+}
+
+.button-application {
+  background-color: var(--basic-green);
+}
+
+.button-application:hover,
+.button-application:focus {
+  background-color: var(--hover-green);
+}
+
+.button-application:active {
+  background-color: var(--active-green);
+}
+
+.button-presentation {
+  background-color: var(--basic-yellow);
+}
+
+.button-presentation:hover,
+.button-presentation:focus {
+  background-color: var(--hover-yellow);
+}
+
+.button-presentation:active {
+  background-color: var(--active-yellow);
+}
+
+.services-item a {
+  color: var(--basic-white);
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+/* Contacts */
+
+.contacts h2 {
+  text-transform: uppercase;
+}
+
+.contacts-phone {
+  color: inherit;
+}
+
+/* Main footer */
+
+.main-footer {
+  color: var(--basic-black);
+}
+
+.footer-socials {
+  text-align: left;
+}
+
+.socials-list {
+  list-style: none;
+}
+
+.discount-motto {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+/* Social button */
+
+.social-button {
+  background-color: var(--basic-gray);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.social-button:hover {
+  background-color: var(--hover-red);
+}
+
+.social-button:active {
+  background-color: var(--active-red);
+}
+
+.social-button img:active {
+  opacity: 30%;
+}
